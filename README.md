@@ -3,7 +3,7 @@
 
 This is our blog for the project. We discuss and update on our process from the initial idea to our final implementation. 
 
-## 2024-05-05
+### 2024-05-05
 
 [Detta är EFTER specifikationen blev klar. Här började vi göra research och spåna idéer på implementation för PWA]
 
