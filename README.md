@@ -15,6 +15,6 @@ This is our blog for the project. We discuss and update on our process from the 
 
 [mall för rapport (men detta ska nog inte tas med), föröker skapa kollision med marknivån]
 
-### 2024-05-xx
+### 2024-05-10
 
 []
