@@ -1,5 +1,5 @@
 # DH2323 Computer Graphics and Interaction
-## Procedural Walking Animation and Style - The Blog
+## Procedural Walking Animation - The Blog
 
 This is our blog for the project. We discuss and update on our process from the initial idea to our final implementation. 
 
