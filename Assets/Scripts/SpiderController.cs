@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpiderController : MonoBehaviour
+public class ModelController : MonoBehaviour
 {
     public float m_Speed = 12f;
     public float m_TurnSpeed = 180f;
