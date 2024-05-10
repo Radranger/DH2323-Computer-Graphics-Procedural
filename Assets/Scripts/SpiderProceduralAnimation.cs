@@ -5,25 +5,29 @@ using UnityEngine;
 public class SpiderProceduralAnimation : MonoBehaviour
 {
     //private LayerMask floorLayer = default;        // A layer mask so that a ray can be cast just at gameobjects on the ground layer.
-    Vector3 currentPosition, newPosition, oldPosition;
+    Vector3 currentPosition, newPosition, targetPosition, bodyPosition;
+    public float stepDistance = 1f;
+    public GameObject Target;
 
     private void Start()
     {
-        currentPosition = newPosition = oldPosition = transform.position;
+        currentPosition = newPosition = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.position = currentPosition;
-
-        Ray ray = new Ray(currentPosition, Vector3.down);
+        targetPosition = GameObject.FindWithTag("Target").transform.position;
+        Ray ray = new Ray(targetPosition, Vector3.down);
         if (Physics.Raycast(ray, out RaycastHit hit, 10))
         {
-            //Debug.Log("Floor Hit!");
+            if (Vector3.Distance(targetPosition, currentPosition) > stepDistance)
+            {
+            Debug.Log(Vector3.Distance(hit.point, currentPosition));
             // Move the bone's position to the hit point
-            
-            newPosition = hit.point;
+            currentPosition = hit.point;
+            }
         }
     }
 
