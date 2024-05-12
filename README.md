@@ -23,4 +23,5 @@ Anteckning Alex: Step 3 in the process, creating a target point that’s an empt
 
 ### 2024-05-12
 
-Worked on finding relevant academic papers for the report. Found one "Procedural locomotion of multilegged characters in dynamic environments" which seemed very similar to our own implementation so we continued from there. Some points in the report has been written down and expanded upon. 
+Worked on finding relevant academic papers for the report. Found one "Procedural locomotion of multilegged characters in dynamic environments" which seemed very similar to our own implementation so we continued from there. Report has gone through extensive writing of things we currently have work on such as introduction, related work, current implementation at the current stage and explanation of theories.
+
