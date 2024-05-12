@@ -7,7 +7,7 @@ This is our blog for the project. We discuss and update on our process from the 
 
 [Detta är EFTER specifikationen blev klar. Här började vi göra research och spåna idéer på implementation för PWA]
 
-Found one "Procedural locomotion of multilegged characters in dynamic environments" which seemed very similar to our own implementation so we continued from there.
+Found one "Procedural locomotion of multilegged characters in dynamic environments" which seemed very similar to our own goal so we continued from there.
 
 ### 2024-05-07
 
