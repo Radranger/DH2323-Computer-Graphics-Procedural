@@ -7,6 +7,8 @@ This is our blog for the project. We discuss and update on our process from the 
 
 [Detta är EFTER specifikationen blev klar. Här började vi göra research och spåna idéer på implementation för PWA]
 
+Found one "Procedural locomotion of multilegged characters in dynamic environments" which seemed very similar to our own implementation so we continued from there.
+
 ### 2024-05-07
 
 [gjort inverse kinematics, lite strul med GitHub commit men gick bra i slutändan]
@@ -23,5 +25,5 @@ Anteckning Alex: Step 3 in the process, creating a target point that’s an empt
 
 ### 2024-05-12
 
-Worked on finding relevant academic papers for the report. Found one "Procedural locomotion of multilegged characters in dynamic environments" which seemed very similar to our own implementation so we continued from there. Report has gone through extensive writing of things we currently have work on such as introduction, related work, current implementation at the current stage and explanation of theories.
+Worked on finding relevant academic papers for the report. Report has gone through extensive writing of things we currently have work on such as introduction, related work, current implementation at the current stage and explanation of theories.
 
