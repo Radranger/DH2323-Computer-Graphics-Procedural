@@ -25,5 +25,5 @@ Anteckning Alex: Step 3 in the process, creating a target point that’s an empt
 
 ### 2024-05-12
 
-Worked on finding relevant academic papers for the report. Report has gone through extensive writing of things we currently have work on such as introduction, related work, current implementation at the current stage and explanation of theories.
+Found more academic paper "Evaluating Emotive Character Animations Created with Procedural Animation" which we found relevant to the project. The peport has gone through extensive writing of things we currently have work on such as introduction, related work, current implementation at the current stage and explanation of theories. 
 
