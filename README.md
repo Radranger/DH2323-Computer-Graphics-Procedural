@@ -20,3 +20,7 @@ Anteckning Luca: We started the meeting with a quick summary of the previous mee
 ### 2024-05-10
 
 Anteckning Alex: Step 3 in the process, creating a target point that’s an empty game object attached to the body, this empty game object will be named ”Body target”. We’ll have a new script that raycasts it to the ground. When it has moved forward a certain distance from its current position, the legs should update to a new standard position based on the body’s position. Currently attempting at implementing four tagers, one for each leg, instead of having one whole target for all four legs.
+
+### 2024-05-12
+
+Worked on finding relevant academic papers for the report. Found one "Procedural locomotion of multilegged characters in dynamic environments" which seemed very similar to our own implementation so we continued from there. Some points in the report has been written down and expanded upon.
