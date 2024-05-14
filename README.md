@@ -33,4 +33,5 @@ Managed to make the spider legs react appropriately to uneven terrain. Also work
 
 ### 2024-05-14
 
+test to see if links attachments to images/GIFs work on readme
 ![test to see if links attachments to images/GIFs work](https://github.com/Radranger/DH2323-Computer-Graphics-Procedural/blob/main/Images%20and%20GIFs/github%20GIF%20test.gif)
