@@ -17,12 +17,13 @@ Found a [four-legged spider model](https://assetstore.unity.com/packages/3d/char
 
 test to see if links attachments to images/GIFs work on readme
 ![](https://github.com/Radranger/DH2323-Computer-Graphics-Procedural/blob/main/Images%20and%20GIFs/github%20GIF%20test.gif)
+![](https://github.com/Radranger/DH2323-Computer-Graphics-Procedural/blob/main/Images%20and%20GIFs/github%20GIF%20test2.gif)
 
 ### 2024-05-09
 
 [mall för rapport (men detta ska nog inte tas med), föröker skapa kollision med marknivån]
 
-After some time trying to implement the rest of IK to the limbs, a video guide as well as resources that on line was used. Getting the tip of the legs to be fixed to the ground was quite complicated at first and we had to look up guides that would explain how to do this. We then created a C#-script to experiment with some ideas that we had. For example we tried to use the function OnCollisionEnter with a boolean variable ”hasCollided” as well as the method ”FreezePosition”. Sadly we were not able to implement the movement of the limbs through this approach so we continued looking for guides that could help us with this step.
+After some time trying to implement the rest of IK to the limbs without any particular success, video guides as well as resources online were used. Getting the tip of the legs to be fixed to the ground was quite complicated. A C#-script was also created to experiment with some ideas. For example trying to use the function OnCollisionEnter with a boolean variable ”hasCollided” as well as the method ”FreezePosition”.
 
 ### 2024-05-10
 
