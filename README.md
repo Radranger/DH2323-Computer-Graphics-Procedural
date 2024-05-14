@@ -29,7 +29,7 @@ Found more academic paper "Evaluating Emotive Character Animations Created with 
 
 ### 2024-05-13
 
-
+Managed to make the spider legs react appropriately to uneven terrain. Also worked a little on lerp by attempting to have the steps make a smooth animation when transitioning from current target to new target.
 
 ### 2024-05-14
 
