@@ -190,6 +190,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4118100857197566, guid: 5c7f0950aa535ce4faef155ad244c136, type: 3}
   m_PrefabInstance: {fileID: 367446752}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &268097036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268097037}
+  m_Layer: 0
+  m_Name: Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &268097037
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268097036}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 654353951}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &280160580
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +598,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 268097037}
   - {fileID: 694817447}
   - {fileID: 892290658}
   - {fileID: 83306387}
@@ -773,7 +805,7 @@ GameObject:
   - component: {fileID: 870100934}
   m_Layer: 0
   m_Name: FR leg Target
-  m_TagString: Untagged
+  m_TagString: Leg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -879,7 +911,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 942883141}
+  oppositeTarget: {fileID: 2062528577}
+  oppositeLegs: []
+  currentPosition: {x: 0, y: 0, z: 0}
   stepDistance: 0.2
+  legSpeed: 10
+  hasMoved: 0
+  oppositeLeg: {fileID: 0}
 --- !u!4 &888884337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4092859990262748, guid: 5c7f0950aa535ce4faef155ad244c136, type: 3}
@@ -1235,7 +1273,7 @@ GameObject:
   - component: {fileID: 1413702587}
   m_Layer: 0
   m_Name: BR leg Target
-  m_TagString: Untagged
+  m_TagString: OppositeLeg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1337,11 +1375,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1413702582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7385c32ebb0dad4082ddcb33b42324c, type: 3}
+  m_Script: {fileID: 11500000, guid: 128aaed27608a9f4082c41793605ff24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 1530305087}
+  oppositeTarget: {fileID: 1726438154}
+  legs: []
+  currentPosition: {x: 0, y: 0, z: 0}
   stepDistance: 0.2
+  legSpeed: 10
+  hasMoved: 0
+  Leg: {fileID: 0}
 --- !u!1 &1489504415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,7 +1401,7 @@ GameObject:
   - component: {fileID: 1489504420}
   m_Layer: 0
   m_Name: BL leg Target
-  m_TagString: Untagged
+  m_TagString: Leg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1463,7 +1507,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 2062528577}
+  oppositeTarget: {fileID: 942883141}
+  oppositeLegs: []
+  currentPosition: {x: 0, y: 0, z: 0}
   stepDistance: 0.2
+  legSpeed: 10
+  hasMoved: 0
+  oppositeLeg: {fileID: 0}
 --- !u!1 &1530305087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1806,7 +1856,7 @@ GameObject:
   - component: {fileID: 1967717760}
   m_Layer: 0
   m_Name: FL leg Target
-  m_TagString: Untagged
+  m_TagString: OppositeLeg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1908,11 +1958,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1967717755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7385c32ebb0dad4082ddcb33b42324c, type: 3}
+  m_Script: {fileID: 11500000, guid: 128aaed27608a9f4082c41793605ff24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 1726438154}
+  oppositeTarget: {fileID: 1530305087}
+  legs: []
+  currentPosition: {x: 0, y: 0, z: 0}
   stepDistance: 0.2
+  legSpeed: 10
+  hasMoved: 0
+  Leg: {fileID: 0}
 --- !u!1 &2062528577
 GameObject:
   m_ObjectHideFlags: 0
