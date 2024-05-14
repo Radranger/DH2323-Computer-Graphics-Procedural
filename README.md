@@ -13,7 +13,7 @@ Started doing research about Procedural Walking Animation (PWA) and brainstormin
 
 [gjort inverse kinematics, lite strul med GitHub commit men gick bra i slutändan]
 
-Found a [four-legged spider model](https://assetstore.unity.com/packages/3d/characters/robots/spider-orange-181154#content) and used built-in Unity package "Animation Rigging" to implement IK. At the end of session, an early and very bare-bone implementation of IK works! 
+Found a [four-legged spider model](https://assetstore.unity.com/packages/3d/characters/robots/spider-orange-181154#content) and used built-in Unity package "Animation Rigging" to implement IK. At the end of session, an early and very bare-bone implementation of IK works! It has very minor but distinctive limp movement so far. Apart from work, there was some GiHub commit issues with the rpository but was later fixed. 
 
 test to see if links attachments to images/GIFs work on readme
 ![](https://github.com/Radranger/DH2323-Computer-Graphics-Procedural/blob/main/Images%20and%20GIFs/github%20GIF%20test.gif)
@@ -22,9 +22,7 @@ test to see if links attachments to images/GIFs work on readme
 
 [mall för rapport (men detta ska nog inte tas med), föröker skapa kollision med marknivån]
 
-Early 
-
-Anteckning Luca: We started the meeting with a quick summary of the previous meeting where we discussed how we imported the model with all its components. The movement of the limbs was still not correctly implemented so we tried to use a video guide as well as resources that we found on the internet. Getting the tip of the legs to be fixed to the ground was quite complicated at first and we had to look up guides that would explain how to do this. We then created a C#-script to experiment with some ideas that we had. For example we tried to use the function OnCollisionEnter with a boolean variable ”hasCollided” as well as the method ”FreezePosition”. Sadly we were not able to implement the movement of the limbs through this approach so we continued looking for guides that could help us with this step.
+After some time trying to implement the rest of IK to the limbs, a video guide as well as resources that on line was used. Getting the tip of the legs to be fixed to the ground was quite complicated at first and we had to look up guides that would explain how to do this. We then created a C#-script to experiment with some ideas that we had. For example we tried to use the function OnCollisionEnter with a boolean variable ”hasCollided” as well as the method ”FreezePosition”. Sadly we were not able to implement the movement of the limbs through this approach so we continued looking for guides that could help us with this step.
 
 ### 2024-05-10
 
