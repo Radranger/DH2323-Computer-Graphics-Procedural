@@ -16,7 +16,7 @@ Started doing research about Procedural Walking Animation (PWA) and brainstormin
 Found a [four-legged spider model](https://assetstore.unity.com/packages/3d/characters/robots/spider-orange-181154#content) and used built-in Unity package "Animation Rigging" to implement IK. At the end of session, an early and very bare-bone implementation of IK works! 
 
 test to see if links attachments to images/GIFs work on readme
-![test to see if links attachments to images/GIFs work](https://github.com/Radranger/DH2323-Computer-Graphics-Procedural/blob/main/Images%20and%20GIFs/github%20GIF%20test.gif)
+![](https://github.com/Radranger/DH2323-Computer-Graphics-Procedural/blob/main/Images%20and%20GIFs/github%20GIF%20test.gif)
 
 ### 2024-05-09
 
