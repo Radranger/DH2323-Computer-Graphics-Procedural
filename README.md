@@ -33,4 +33,4 @@ Found more academic paper "Evaluating Emotive Character Animations Created with 
 
 ### 2024-05-14
 
-[test to see if links attachments to images/GIFs work](https://github.com/Radranger/DH2323-Computer-Graphics-Procedural/blob/main/Images%20and%20GIFs/github%20GIF%20test.gif)
+![test to see if links attachments to images/GIFs work](https://github.com/Radranger/DH2323-Computer-Graphics-Procedural/blob/main/Images%20and%20GIFs/github%20GIF%20test.gif)
