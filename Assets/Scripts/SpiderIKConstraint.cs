@@ -32,15 +32,15 @@ public class SpiderIKConstraint : MonoBehaviour
             //Debug.Log(Vector3.Distance(hit.point, currentPosition));
             // Move the bone's position to the hit point
             Debug.Log(hasMoved);
-            stepCounter++;
+            stepCounter = 0;
             oppositeLegPosition = oppositeTarget.transform.position;
 
             //oppositeLegs[1].GetComponent<SpiderOppositeIKConstraint>().hasMoved = false;
         }
-        else if (Vector3.Distance(Target.transform.position, currentPosition) > stepDistance && stepCounter %2 == 0)
+        else if (Vector3.Distance(oppositeTarget.transform.position, oppositeLegPosition) > stepDistance && stepCounter %2 == 0)
         {
             currentPosition = Target.transform.position;
-            stepCounter++;
+            stepCounter = 1;
         }
     }
 
