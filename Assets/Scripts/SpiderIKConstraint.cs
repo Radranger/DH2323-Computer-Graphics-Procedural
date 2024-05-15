@@ -7,38 +7,42 @@ public class SpiderIKConstraint : MonoBehaviour
     int layerMask;
     public GameObject Target;
     public GameObject oppositeTarget;
-    public GameObject[] oppositeLegs;
+    public GameObject oppositeLegs;
     public Vector3 currentPosition;
+    public Vector3 oppositeLegPosition;
     public float stepDistance = 1.5f;
     public float legSpeed = 10f;
+    private float stepCounter = 0f;
     public bool hasMoved;
-    public SpiderOppositeIKConstraint oppositeLeg;
 
     private void Start()
     {
-        oppositeLegs = GameObject.FindGameObjectsWithTag("OppositeLeg");
         currentPosition = transform.position;
+        oppositeLegPosition = oppositeLegs.transform.position;
         //layerMask = LayerMask.GetMask("floor"); // A layer mask so that a ray can be cast just at gameobjects on the Floor layer.
-        hasMoved = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.position = currentPosition;
-            if (Vector3.Distance(Target.transform.position, currentPosition) > stepDistance)
-            {
-                //Debug.Log(Vector3.Distance(hit.point, currentPosition));
-                // Move the bone's position to the hit point
-                if (hasMoved == false);
-                {
-                    currentPosition = Target.transform.position;
-                    oppositeLeg.currentPosition = oppositeTarget.transform.position;
-                    oppositeLegs[0].GetComponent<SpiderOppositeIKConstraint>().hasMoved = false;
-                    oppositeLegs[1].GetComponent<SpiderOppositeIKConstraint>().hasMoved = false;
-                }
-            }
+        oppositeLegs.transform.position = oppositeLegPosition;
+        if (Vector3.Distance(Target.transform.position, currentPosition) > stepDistance && stepCounter %2 != 0)
+        {
+            //Debug.Log(Vector3.Distance(hit.point, currentPosition));
+            // Move the bone's position to the hit point
+            Debug.Log(hasMoved);
+            stepCounter++;
+            oppositeLegPosition = oppositeTarget.transform.position;
 
+            //oppositeLegs[1].GetComponent<SpiderOppositeIKConstraint>().hasMoved = false;
+        }
+        else if (Vector3.Distance(Target.transform.position, currentPosition) > stepDistance && stepCounter %2 == 0)
+        {
+            currentPosition = Target.transform.position;
+            stepCounter++;
+        }
+    }
 
             /*
             else
@@ -53,7 +57,7 @@ public class SpiderIKConstraint : MonoBehaviour
 
             }
             */
-    }
+
         //BACKUP CODE BELOW
 
         /*
